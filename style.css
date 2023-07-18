@@ -34,7 +34,15 @@ header {
   padding: 0;
   font-size: 30px;
   word-wrap: break-word;
-  border: 2px solid red;
+  padding-right: 5px;
+  /* border: 2px solid red; */
+}
+#ans {
+  text-align: right;
+  padding: 0;
+  font-size: 45px;
+  word-wrap: break-word;
+  padding-right: 5px;
 }
 .buttons {
   width: 100%;
