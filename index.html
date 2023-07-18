@@ -11,35 +11,39 @@
       <header>Calculator</header>
       <div id="screen">
         <!-- <input type -->
-        <div class="display"></div>
-        <div class="ans"></div>
+        <div id="display">0</div>
+        <div id="ans"></div>
       </div>
       <div class="keypad" style="padding: 10px">
         <div class="buttons">
-          <div class="btn"><p>CE</p></div>
-          <div class="btn">
+          <div class="btn" onclick="clearDisplay()"><p>CE</p></div>
+          <div class="btn" onclick="bs()">
             <div>
               <img
-              src="https://th.bing.com/th/id/R.a9c52df9d37bf6bf295f7778a33cc245?rik=ji4oikE1dVxFhQ&riu=http%3a%2f%2fwww.trigcalc.com%2fimages%2fbackspaceButton.png&ehk=iC96X5ea1pezsiB0EF6e3iQL1ITJK8yQZiI74YI9QZY%3d&risl=&pid=ImgRaw&r=0"
-              height="30px" width="30px" " />
+                src="https://th.bing.com/th/id/R.a9c52df9d37bf6bf295f7778a33cc245?rik=ji4oikE1dVxFhQ&riu=http%3a%2f%2fwww.trigcalc.com%2fimages%2fbackspaceButton.png&ehk=iC96X5ea1pezsiB0EF6e3iQL1ITJK8yQZiI74YI9QZY%3d&risl=&pid=ImgRaw&r=0"
+                height="30px"
+                width="30px" />
             </div>
           </div>
-          <div class="btn"><p>/</p></div>
-          <div class="btn"><p>*</p></div>
-          <div class="btn"><p>7</p></div>
-          <div class="btn"><p>8</p></div>
-          <div class="btn"><p>9</p></div>
+          <div class="btn" onclick="arith('/')"><p>/</p></div>
+          <div class="btn" onclick="arith('*')"><p>*</p></div>
+          <div class="btn" onclick="display(7)"><p>7</p></div>
+          <div class="btn" onclick="display(8)"><p>8</p></div>
+          <div class="btn" onclick="display(9)"><p>9</p></div>
 
-          <div class="btn"><p>-</p></div>
-          <div class="btn"><p>4</p></div>
-          <div class="btn"><p>5</p></div>
-          <div class="btn"><p>6</p></div>
-          <div class="btn"><p>+</p></div>
+          <div class="btn" onclick="arith('-')"><p>-</p></div>
+          <div class="btn" onclick="display(4)"><p>4</p></div>
+          <div class="btn" onclick="display(5)"><p>5</p></div>
+          <div class="btn" onclick="display(6)"><p>6</p></div>
+          <div class="btn" onclick="arith('+')"><p>+</p></div>
 
-          <div class="btn"><p>1</p></div>
-          <div class="btn"><p>2</p></div>
-          <div class="btn"><p>3</p></div>
-          <div class="btn" style="grid-column-start: 1; grid-column-end: 3">
+          <div class="btn" onclick="display(1)"><p>1</p></div>
+          <div class="btn" onclick="display(2)"><p>2</p></div>
+          <div class="btn" onclick="display(3)"><p>3</p></div>
+          <div
+            class="btn"
+            style="grid-column-start: 1; grid-column-end: 3"
+            onclick="display(0)">
             <p>0</p>
           </div>
           <div
@@ -51,12 +55,14 @@
               grid-column-end: 5;
               background-color: #56cb95;
               color: #fff;
-            ">
+            "
+            onclick="calculate()">
             <p>=</p>
           </div>
-          <div class="btn"><p>.</p></div>
+          <div class="btn" onclick="addDecimal()"><p>.</p></div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -24,8 +24,17 @@ header {
   height: 120px;
   background-color: #f3f3f3;
   /* border: 2px solid red; */
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  margin: 0 10px;
+}
+#display {
+  text-align: right;
+  padding: 0;
+  font-size: 30px;
+  word-wrap: break-word;
+  border: 2px solid red;
 }
 .buttons {
   width: 100%;
