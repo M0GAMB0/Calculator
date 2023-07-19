@@ -11,8 +11,8 @@
       <header>Calculator</header>
       <div id="screen">
         <!-- <input type -->
-        <div id="display">0</div>
-        <div id="ans"></div>
+        <div id="display"></div>
+        <div id="ans">0</div>
       </div>
       <div class="keypad" style="padding: 10px">
         <div class="buttons">
@@ -22,13 +22,16 @@
               <img
                 src="https://th.bing.com/th/id/R.a9c52df9d37bf6bf295f7778a33cc245?rik=ji4oikE1dVxFhQ&riu=http%3a%2f%2fwww.trigcalc.com%2fimages%2fbackspaceButton.png&ehk=iC96X5ea1pezsiB0EF6e3iQL1ITJK8yQZiI74YI9QZY%3d&risl=&pid=ImgRaw&r=0"
                 height="30px"
-                width="30px" />
+                width="30px"
+              />
             </div>
           </div>
           <div class="btn" onclick="arith('/')"><p>/</p></div>
           <div class="btn" onclick="arith('*')"><p>*</p></div>
           <div class="btn" onclick="display(7)"><p>7</p></div>
-          <div class="btn" onclick="display(8)"><p>8</p></div>
+          <div class="btn" onclick="display(8)">
+            <p>8</p>
+          </div>
           <div class="btn" onclick="display(9)"><p>9</p></div>
 
           <div class="btn" onclick="arith('-')"><p>-</p></div>
@@ -43,7 +46,8 @@
           <div
             class="btn"
             style="grid-column-start: 1; grid-column-end: 3"
-            onclick="display(0)">
+            onclick="display(0)"
+          >
             <p>0</p>
           </div>
           <div
@@ -56,7 +60,8 @@
               background-color: #56cb95;
               color: #fff;
             "
-            onclick="calculate()">
+            onclick="calculate()"
+          >
             <p>=</p>
           </div>
           <div class="btn" onclick="addDecimal()"><p>.</p></div>
