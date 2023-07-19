@@ -261,6 +261,9 @@ document.addEventListener("keydown", (e) => {
     case "Backspace":
       bs();
       break;
+    case "0":
+      display(0);
+      break;
     case "1":
       display(1);
       break;
